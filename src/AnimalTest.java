@@ -26,6 +26,14 @@ public class AnimalTest
     
     public void fullConstructorTest() throws AssertException
     {
+    	//Using non-default constructor
+    	Animal animal2 = new Animal("red", "panda", 20.00, 10.00);
+    	
+    	//Should be: red, panda, 20.0 weight and 10.0 height
+    	 Assert.assertEquals("red", animal2.getColor());
+         Assert.assertEquals("panda", animal2.getName());
+         Assert.assertEquals(10.00, animal2.getHeight(), 0.01);
+         Assert.assertEquals(20.00, animal2.getWeight(), 0.01);
     	
     }
     
