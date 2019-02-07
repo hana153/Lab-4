@@ -145,7 +145,14 @@ public class Animal
         boolean sameColor = this.getColor().equals(otherAni.getColor());
         boolean sameWeight = this.getWeight() == otherAni.getWeight();
         boolean sameHeight = this.getHeight() == otherAni.getHeight();
-        
+       
         /* return TODO; */
+        if (sameName && sameColor && sameWeight && sameHeight) {
+        	return true;
+        }
+        else {
+        	return false;
+        	
+        }
     }
 }
