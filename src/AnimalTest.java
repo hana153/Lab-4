@@ -27,41 +27,44 @@ public class AnimalTest
     public void fullConstructorTest() throws AssertException
     {
     	//Using non-default constructor
-    	Animal animal2 = new Animal("red", "panda", 20.00, 10.00);
+    	Animal animal = new Animal("red", "panda", 20.00, 10.00);
     	
     	//Should be: red, panda, 20.0 weight and 10.0 height
-    	 Assert.assertEquals("red", animal2.getColor());
-         Assert.assertEquals("panda", animal2.getName());
-         Assert.assertEquals(10.00, animal2.getHeight(), 0.01);
-         Assert.assertEquals(20.00, animal2.getWeight(), 0.01);
+    	 Assert.assertEquals("red", animal.getColor());
+         Assert.assertEquals("panda", animal.getName());
+         Assert.assertEquals(10.00, animal.getHeight(), 0.01);
+         Assert.assertEquals(20.00, animal.getWeight(), 0.01);
     	
     }
     
     public void getNameTest() throws AssertException
     {
-    	Animal animal3 = new Animal();
-    	Assert.assertEquals("noname", animal3.getName());
+    	Animal animal = new Animal();
+    	Assert.assertEquals("noname", animal.getName());
     }
     
     public void getColorTest() throws AssertException
     {
-    	
+    	Animal animal = new Animal();
+    	Assert.assertEquals("unknown", animal.getColor());
     }
     
     public void getWeightTest() throws AssertException
     {
-    	
+    	Animal animal = new Animal();
+    	Assert.assertEquals(0, animal.getHeight(), 0.01);
     }
     
     public void getHeightTest() throws AssertException
     {
-    	
+    	Animal animal = new Animal();
+    	Assert.assertEquals(0, animal.getHeight(), 0.01);
     }
     
     public void toStringTest() throws AssertException
     {
-    	Animal animal7 = new Animal();
-    	Assert.assertEquals("noname, a unknown-colored animal. 0.0 pounds, 0.0 inches\n", animal7.toString());
+    	Animal animal = new Animal();
+    	Assert.assertEquals("noname, a unknown-colored animal. 0.0 pounds, 0.0 inches\n", animal.toString());
     }
 }
 
