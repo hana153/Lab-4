@@ -37,14 +37,31 @@ public class AnimalTest
     	
     }
     
-    public void getterTest() throws AssertException
+    public void getNameTest() throws AssertException
+    {
+    	Animal animal3 = new Animal();
+    	Assert.assertEquals("noname", animal3.getName());
+    }
+    
+    public void getColorTest() throws AssertException
+    {
+    	
+    }
+    
+    public void getWeightTest() throws AssertException
+    {
+    	
+    }
+    
+    public void getHeightTest() throws AssertException
     {
     	
     }
     
     public void toStringTest() throws AssertException
     {
-    	
+    	Animal animal7 = new Animal();
+    	Assert.assertEquals("noname, a unknown-colored animal. 0.0 pounds, 0.0 inches\n", animal7.toString());
     }
 }
 
