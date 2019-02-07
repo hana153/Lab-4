@@ -27,7 +27,7 @@ public class Driver
        System.out.println(zoo);
        
        // Create a utility belt and print out its info:
-	   UtilityBelt team = new UtilityBelt("InputOfficial.csv");
+	   /*UtilityBelt team = new UtilityBelt("InputOfficial.csv");
        
        team.writeEquipment("EquipmentInfo.txt");
        team.writeStatistics("EquipmentStats.txt");
@@ -36,5 +36,6 @@ public class Driver
        
        team2.writeEquipment("EquipmentInfo.txt");
        team2.writeStatistics("EquipmentStats.txt");
+       */
    }
 }
