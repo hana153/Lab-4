@@ -23,5 +23,21 @@ public class AnimalTest
     }
 
     // TODO: test full constructor, getters, and toString
+    
+    public void fullConstructorTest() throws AssertException
+    {
+    	
+    }
+    
+    public void getterTest() throws AssertException
+    {
+    	
+    }
+    
+    public void toStringTest() throws AssertException
+    {
+    	
+    }
 }
+
 
