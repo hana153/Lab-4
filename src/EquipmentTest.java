@@ -49,7 +49,7 @@ public class EquipmentTest
     	Assert.assertEquals("Name: name, Number: 0, Weight: 0.00 lbs, Price: $0.00 - description", equipment.toString());
     }
     
-    public void isequalTest() throws AssertException
+    public void isEqualTest() throws AssertException
     {
     	Equipment equipment1 = new Equipment("name/0,0,0,description");
     	Equipment equipment2 = new Equipment("name/0,0,0,description");
