@@ -48,4 +48,14 @@ public class EquipmentTest
     	Equipment equipment = new Equipment("name/0,0,0,description");
     	Assert.assertEquals("Name: name, Number: 0, Weight: 0.00 lbs, Price: $0.00 - description", equipment.toString());
     }
+    
+    public void isequalTest() throws AssertException
+    {
+    	Equipment equipment1 = new Equipment("name/0,0,0,description");
+    	Equipment equipment2 = new Equipment("name/0,0,0,description");
+    	Assert.assertEquals(true, equipment1.equals(equipment2));
+    	Equipment equipment3 = new Equipment("name/0,10,0,description");
+    	Equipment equipment4 = new Equipment("name/0,0,0,description");
+    	Assert.assertEquals(false, equipment3.equals(equipment4));
+    }
 }
