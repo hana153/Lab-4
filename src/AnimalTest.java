@@ -69,7 +69,12 @@ public class AnimalTest
     
     public void isequalTest() throws AssertException
     {
-    	
+    	Animal animal1 = new Animal("red", "panda", 20.00, 10.00);
+    	Animal animal2 = new Animal("red", "panda", 20.00, 10.00);
+    	Assert.assertEquals(true, animal1.equals(animal2));
+    	Animal animal3 = new Animal("red", "panda", 20.00, 10.00);
+    	Animal animal4 = new Animal("yellow", "panda", 20.00, 10.00);
+    	Assert.assertEquals(false, animal3.equals(animal4));
     }
 }
 
