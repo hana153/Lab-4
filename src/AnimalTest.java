@@ -66,6 +66,11 @@ public class AnimalTest
     	Animal animal = new Animal();
     	Assert.assertEquals("noname, a unknown-colored animal. 0.0 pounds, 0.0 inches\n", animal.toString());
     }
+    
+    public void isequalTest() throws AssertException
+    {
+    	
+    }
 }
 
 
